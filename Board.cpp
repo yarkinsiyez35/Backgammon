@@ -22,6 +22,12 @@ Board::Board(char piece1, char piece2)              //constructor
         array[16].Push(piece2);
     }
 }
+
+Board::~Board()
+{
+    delete[] array;
+}
+
 bool Board::possibleNormalMove(bool direction, char piece, int dice) const
 {
     if (direction)          //if the direction is clockwise
