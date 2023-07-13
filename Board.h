@@ -7,6 +7,7 @@
 class Board {
 public:
     Board(char piece1 = 'O', char piece2 = 'X');                                                            //constructor
+    ~Board();                                                                                                //destructor
 
     /*for piece traversal*/
     bool possibleNormalMove(bool direction, char piece, int dice) const;                            //checks for any possible move for the player
